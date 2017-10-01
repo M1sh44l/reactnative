@@ -5,6 +5,7 @@ class myStore {
     extendObservable(this, {
       todos: [],
       name: "Mishaal",
+      loaded: false,
     })
   }
 }
