@@ -4,7 +4,8 @@ import { observer } from "mobx-react";
 import MyButton from './MyButton';
 import MyNewList from './MyNewList';
 import MyUsersList from './MyUsersList';
-
+import Signup from './Signup';
+import MyLogin from './MyLogin';
 import {View} from 'react-native';
 import { NativeRouter,Route , Link } from 'react-router-native'
 
@@ -35,6 +36,7 @@ export default observer(class MyContent extends Component {
           <Route path="/x" component={MyButton} />
           <Route path="/y" component={MyNewList} />
           <Route path="/z" render={() => <MyUsersList store={this.props.store} />} />
+          <Route path="/c" render={() => <MyLogin store={this.props.store} />} />
       </Content>
       <Footer>
         <FooterTab>

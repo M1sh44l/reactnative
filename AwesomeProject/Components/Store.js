@@ -4,8 +4,11 @@ class myStore {
   constructor() {
     extendObservable(this, {
       todos: [],
-      name: "Mishaal",
+      name: "mishaal",
+      username: "",
+      password: "",
       loaded: false,
+      token: '',
     })
   }
 }
